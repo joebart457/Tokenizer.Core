@@ -6,13 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.1.0</Version>
+    <Version>0.1.2</Version>
     <Authors>JimmyDev</Authors>
     <Description>Library to help with tokenization and parsing of text.</Description>
     <Title>Tokenizer.Core</Title>
     <PackageIcon>tokenizer.png</PackageIcon>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageTags>Tokenization;Token;Parse;Parser</PackageTags>
+    <PackageProjectUrl>https://github.com/joebart457/Tokenizer.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/joebart457/Tokenizer.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

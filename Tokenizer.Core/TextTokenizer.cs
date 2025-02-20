@@ -4,7 +4,7 @@ using Tokenizer.Core.Models;
 
 namespace Tokenizer.Core;
 
-public class Tokenizer
+public class TextTokenizer
 {
     private bool _bAtEnd;
     private int _nIndex;
@@ -12,11 +12,17 @@ public class Tokenizer
     private int _nColumn;
     private char _cCurrent;
     private string _text = "";
-    private IEnumerable<TokenizerRule> _rules = new List<TokenizerRule>();
-    TokenizerSettings _settings;
-    public Tokenizer(IEnumerable<TokenizerRule> rules, TokenizerSettings? settings = null)
+    private List<TokenizerRule> _rules = new List<TokenizerRule>();
+    private TokenizerSettings _settings;
+
+    public TextTokenizer()
     {
-        _rules = rules.OrderBy((rule) => rule.Length).Reverse();
+        _settings = TokenizerSettings.Default;
+    }
+
+    public TextTokenizer(IList<TokenizerRule> rules, TokenizerSettings? settings = null)
+    {
+        _rules = rules.OrderByDescending((rule) => rule.Length).ToList();
         _settings = settings ?? TokenizerSettings.Default;
     }
 
