@@ -38,6 +38,7 @@ internal class Program
         {
             new TokenizerRule("OperatorEquals", "="),
             new TokenizerRule("PuncuationSemi", ";"),
+            new TokenizerRule("PuncuationDot", "."),
             new TokenizerRule("PuncuationLParen", "("),
             new TokenizerRule("PuncuationRParen", ")"),
             new TokenizerRule("BooleanTrue", "true"),
@@ -70,7 +71,7 @@ internal class Program
 
 Example output:
 
-```shell
+```plaintext
 [Ln. 5, Col. 4](Word, var)
 [Ln. 5, Col. 8](Word, shouldPrint)
 [Ln. 5, Col. 20](OperatorEquals, =)
@@ -86,7 +87,7 @@ Example output:
 [Ln. 7, Col. 8](Word, shouldPrint)
 [Ln. 7, Col. 19](PuncuationRParen, ))
 [Ln. 7, Col. 21](Word, Console)
-[Ln. 7, Col. 28](., .)
+[Ln. 7, Col. 28](PuncuationDot, .)
 [Ln. 7, Col. 29](Word, WriteLine)
 [Ln. 7, Col. 38](PuncuationLParen, ()
 [Ln. 7, Col. 39](Word, msg)
@@ -101,4 +102,3 @@ The **Tokenizer.Core** NuGet package is a versatile tool for text tokenization t
 ## Disclaimer
 
 **Tokenizer.Core** is still a work in progress. While stable, it needs plenty more optimization. The primary focus of this package was to provide ease of use, not necessarily speed of text processing. 
-arily speed of text processing. 

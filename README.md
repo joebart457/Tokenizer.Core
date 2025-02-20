@@ -39,6 +39,7 @@ internal class Program
         {
             new TokenizerRule("OperatorEquals", "="),
             new TokenizerRule("PuncuationSemi", ";"),
+            new TokenizerRule("PuncuationDot", "."),
             new TokenizerRule("PuncuationLParen", "("),
             new TokenizerRule("PuncuationRParen", ")"),
             new TokenizerRule("BooleanTrue", "true"),
@@ -87,7 +88,7 @@ Example output:
 [Ln. 7, Col. 8](Word, shouldPrint)
 [Ln. 7, Col. 19](PuncuationRParen, ))
 [Ln. 7, Col. 21](Word, Console)
-[Ln. 7, Col. 28](., .)
+[Ln. 7, Col. 28](PuncuationDot, .)
 [Ln. 7, Col. 29](Word, WriteLine)
 [Ln. 7, Col. 38](PuncuationLParen, ()
 [Ln. 7, Col. 39](Word, msg)

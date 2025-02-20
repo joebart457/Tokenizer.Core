@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <Authors>JimmyDev</Authors>
     <Description>Library to help with tokenization and parsing of text.</Description>
     <Title>Tokenizer.Core</Title>
