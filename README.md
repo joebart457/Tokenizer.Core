@@ -71,7 +71,7 @@ internal class Program
 
 Example output:
 
-```shell
+```plaintext
 [Ln. 5, Col. 4](Word, var)
 [Ln. 5, Col. 8](Word, shouldPrint)
 [Ln. 5, Col. 20](OperatorEquals, =)
